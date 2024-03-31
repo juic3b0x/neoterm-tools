@@ -1,0 +1,6 @@
+# This file is sourced by pkg
+# Mirror by karibu, hosted in Singapore
+WEIGHT=1
+MAIN="https://mirror.freedif.org/neoterm/neoterm-main"
+ROOT="https://mirror.freedif.org/neoterm/neoterm-root"
+X11="https://mirror.freedif.org/neoterm/neoterm-x11"

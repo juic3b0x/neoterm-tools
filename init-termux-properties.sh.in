@@ -1,0 +1,4 @@
+if [ ! -f @NEOTERM_HOME@/.config/neoterm/neoterm.properties ] && [ ! -e @NEOTERM_HOME@/.neoterm/neoterm.properties ]; then
+	mkdir -p @NEOTERM_HOME@/.neoterm
+	cp @NEOTERM_PREFIX@/share/examples/neoterm/neoterm.properties @NEOTERM_HOME@/.neoterm/
+fi

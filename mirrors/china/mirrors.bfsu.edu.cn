@@ -1,0 +1,6 @@
+# This file is sourced by pkg
+# Mirror by Beijing Foreign Studies University
+WEIGHT=1
+MAIN="https://mirrors.bfsu.edu.cn/neoterm/apt/neoterm-main"
+ROOT="https://mirrors.bfsu.edu.cn/neoterm/apt/neoterm-root"
+X11="https://mirrors.bfsu.edu.cn/neoterm/apt/neoterm-x11"

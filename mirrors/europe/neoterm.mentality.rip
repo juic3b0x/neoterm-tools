@@ -1,0 +1,6 @@
+# This file is sourced by pkg
+# Mirror by A1batross, hosted in Finland
+WEIGHT=1
+MAIN="https://neoterm.mentality.rip/neoterm-main"
+ROOT="https://neoterm.mentality.rip/neoterm-root"
+X11="https://neoterm.mentality.rip/neoterm-x11"

@@ -1,0 +1,6 @@
+# This file is sourced by pkg
+# NeoTerm's origin repo, hosted in Falkenstein, Germany
+WEIGHT=1
+MAIN="https://repo.theworkjoy.com/apt/neoterm-main"
+ROOT="https://repo.theworkjoy.com/apt/neoterm-root"
+X11="https://repo.theworkjoy.com/apt/neoterm-x11"

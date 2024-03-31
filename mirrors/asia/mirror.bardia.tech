@@ -1,0 +1,6 @@
+# This file is sourced by pkg
+# Mirror by Bardia Moshiri, hosted in Iran
+WEIGHT=1
+MAIN="https://mirror.bardia.tech/neoterm/neoterm-main"
+ROOT="https://mirror.bardia.tech/neoterm/neoterm-root"
+X11="https://mirror.bardia.tech/neoterm/neoterm-x11"

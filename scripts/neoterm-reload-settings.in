@@ -1,0 +1,14 @@
+#!/bin/sh
+
+if [ "$#" != "0" ]; then
+	echo 'usage: neoterm-reload-settings'
+	echo 'Use without arguments to reload settings after modifying any of:'
+	echo '  ~/.neoterm/colors.properties'
+	echo '  ~/.neoterm/font.ttf '
+	echo '  ~/.neoterm/neoterm.properties'
+	exit
+fi
+
+case "${NEOTERM__USER_ID:-}" in ''|*[!0-9]*|0[0-9]*) NEOTERM__USER_ID=0;; esac
+
+am broadcast --user "$NEOTERM__USER_ID" -a io.neoterm.app.reload_style io.neoterm > /dev/null

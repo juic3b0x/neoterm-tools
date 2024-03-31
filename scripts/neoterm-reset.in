@@ -1,0 +1,50 @@
+#!/bin/bash
+
+unset LD_PRELOAD LD_LIBRARY_PATH
+
+echo
+echo "You are going to reset your NeoTerm installation."
+echo
+echo "This script will erase everything under \$PREFIX. All files in that directory will be lost, that includes packages, configuration files, databases, etc."
+echo
+echo "NeoTerm home directory as well as data in your shared or external storage will not be removed and left as-is."
+echo
+
+read -re -p "Do you want to continue ? (y/n) " CHOICE
+
+if ! [[ $CHOICE =~ (Y|y) ]]; then
+	echo "Leaving \$PREFIX intact."
+	exit 1
+else
+	HAS_NEOTERM_AM=false
+
+	if [ -f "@NEOTERM_PREFIX@/libexec/neoterm-am/am.apk" ]; then
+		HAS_NEOTERM_AM=true
+
+		echo "Preserving package 'neoterm-am' for later use..."
+
+		if [ -d "@NEOTERM_CACHE_DIR@" ]; then
+			/system/bin/rm -rf "@NEOTERM_CACHE_DIR@/neoterm-am"
+			/system/bin/mkdir -p "@NEOTERM_CACHE_DIR@/neoterm-am"
+			/system/bin/cp "@NEOTERM_PREFIX@/libexec/neoterm-am/am.apk" "@NEOTERM_CACHE_DIR@/neoterm-am/am.apk"
+
+			# In case copying am.apk failed.
+			if [ ! -e "@NEOTERM_CACHE_DIR@/neoterm-am/am.apk" ]; then
+				HAS_NEOTERM_AM=false
+			fi
+		fi
+	fi
+
+	echo "Erasing '@NEOTERM_PREFIX@'..."
+	/system/bin/chmod -R 700 "@NEOTERM_PREFIX@" >/dev/null 2>&1
+	/system/bin/rm -rf "@NEOTERM_PREFIX@"
+	echo "Done. You need to close NeoTerm application now."
+
+	if ! $HAS_NEOTERM_AM; then
+		echo "Terminating all sessions..."
+		/system/bin/killall -9 "$SHELL"
+	else
+		export CLASSPATH="@NEOTERM_CACHE_DIR@/neoterm-am/am.apk"
+		/system/bin/app_process / io.neoterm.neotermam.Am stopservice io.neoterm/.app.NeoTermService
+	fi
+fi

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# NEOTERM_APP_PACKAGE_MANAGER should be exported by neoterm-app v0.119.0+
+# itself and should contain apt or pacman.
+# NEOTERM_MAIN_PACKAGE_FORMAT should be exported by login script in
+# neoterm-tools v0.161+ if neoterm-app version is less than 0.119.0 and
+# should contain debian or pacman.
+if [ -z "${NEOTERM_APP_PACKAGE_MANAGER-}" ]; then
+	if [ -n "${NEOTERM_MAIN_PACKAGE_FORMAT-}" ]; then
+		NEOTERM_APP_PACKAGE_MANAGER="$([ "${NEOTERM_MAIN_PACKAGE_FORMAT-}" = "debian" ] && echo "apt" || echo "${NEOTERM_MAIN_PACKAGE_FORMAT-}")"
+	else
+		NEOTERM_APP_PACKAGE_MANAGER="@NEOTERM_PACKAGE_MANAGER@"
+	fi
+fi
+
+case "${NEOTERM_APP_PACKAGE_MANAGER-}" in
+	apt|pacman) :;;
+	*) echo "Unsupported package manager \"${NEOTERM_APP_PACKAGE_MANAGER-}\". Only 'apt' and 'pacman' managers are supported" 1>&2; exit 1;;
+esac
+export NEOTERM_APP_PACKAGE_MANAGER

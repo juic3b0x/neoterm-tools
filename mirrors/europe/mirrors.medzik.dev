@@ -1,0 +1,6 @@
+# This file is sourced by pkg
+# Mirror by M3DZIK, Hosted in Frankfurt, Germany.
+WEIGHT=1
+MAIN="https://mirrors.medzik.dev/neoterm/neoterm-main"
+ROOT="https://mirrors.medzik.dev/neoterm/neoterm-root"
+X11="https://mirrors.medzik.dev/neoterm/neoterm-x11"

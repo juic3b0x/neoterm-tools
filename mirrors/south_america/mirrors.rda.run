@@ -1,0 +1,6 @@
+# This file is sourced by pkg
+# Mirror by Rodrigo de Avila, Hosted in Brochier, Brazil.
+WEIGHT=1
+MAIN="https://mirrors.rda.run/neoterm/neoterm-main"
+ROOT="https://mirrors.rda.run/neoterm/neoterm-root"
+X11="https://mirrors.rda.run/neoterm/neoterm-x11"

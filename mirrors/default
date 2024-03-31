@@ -1,0 +1,6 @@
+# This file is sourced by pkg
+# Cached (by cloudflare) variant of repo.theworkjoy.com
+WEIGHT=10
+MAIN="https://repo.theworkjoy.com/apt/neoterm-main"
+ROOT="https://repo.theworkjoy.com/apt/neoterm-root"
+X11="https://repo.theworkjoy.com/apt/neoterm-x11"

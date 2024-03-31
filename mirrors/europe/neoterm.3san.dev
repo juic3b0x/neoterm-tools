@@ -1,0 +1,6 @@
+# This file is sourced by pkg
+# Mirror by Exosunandnet
+WEIGHT=1
+MAIN="https://neoterm.3san.dev/neoterm/neoterm-main"
+ROOT="https://neoterm.3san.dev/neoterm/neoterm-root"
+X11="https://neoterm.3san.dev/neoterm/neoterm-x11"

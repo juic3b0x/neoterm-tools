@@ -1,0 +1,6 @@
+# This file is sourced by pkg
+# Mirror by dmitry
+WEIGHT=1
+MAIN="https://repository.su/neoterm/neoterm-main/"
+ROOT="https://repository.su/neoterm/neoterm-root/"
+X11="https://repository.su/neoterm/neoterm-x11/"

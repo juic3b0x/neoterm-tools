@@ -1,0 +1,6 @@
+# This file is sourced by pkg
+# Mirror by SunRed, hosted in Falkenstein, Germany.
+WEIGHT=1
+MAIN="https://mirror.sunred.org/neoterm/neoterm-main"
+ROOT="https://mirror.sunred.org/neoterm/neoterm-root"
+X11="https://mirror.sunred.org/neoterm/neoterm-x11"

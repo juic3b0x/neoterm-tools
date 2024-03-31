@@ -1,0 +1,6 @@
+# This file is sourced by pkg
+# Mirror by MyDapitt, hosted in Singapore
+WEIGHT=1
+MAIN="https://tmx.xvx.my.id/apt/neoterm-main"
+ROOT="https://tmx.xvx.my.id/apt/neoterm-root"
+X11="https://tmx.xvx.my.id/apt/neoterm-x11"

@@ -1,0 +1,15 @@
+#!/bin/sh
+
+if [ $# != 0 ]; then
+	echo 'usage: neoterm-wake-unlock'
+	echo 'Release the NeoTerm wake lock to allow the CPU to sleep.'
+	exit 1
+fi
+
+case "${NEOTERM__USER_ID:-}" in ''|*[!0-9]*|0[0-9]*) NEOTERM__USER_ID=0;; esac
+
+am startservice \
+	--user "$NEOTERM__USER_ID" \
+	-a io.neoterm.service_wake_unlock \
+	io.neoterm/io.neoterm.app.NeoTermService \
+	> /dev/null

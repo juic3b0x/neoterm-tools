@@ -1,0 +1,6 @@
+# This file is sourced by pkg
+# Mirror by Fremont Cabal Internet Exchange
+WEIGHT=1
+MAIN="https://mirror.fcix.net/neoterm/neoterm-main"
+ROOT="https://mirror.fcix.net/neoterm/neoterm-root"
+X11="https://mirror.fcix.net/neoterm/neoterm-x11"

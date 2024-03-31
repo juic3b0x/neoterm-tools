@@ -1,0 +1,6 @@
+# This file is sourced by pkg
+# Mirror by Sahilister hosted in Germany
+WEIGHT=1
+MAIN="https://mirrors.sahilister.in/neoterm/neoterm-main"
+ROOT="https://mirrors.sahilister.in/neoterm/neoterm-root"
+X11="https://mirrors.sahilister.in/neoterm/neoterm-x11"

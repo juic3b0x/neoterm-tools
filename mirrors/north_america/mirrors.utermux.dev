@@ -1,0 +1,6 @@
+# This file is sourced by pkg
+# Mirror by Uneoterm, hosted in San Jose, California, USA
+WEIGHT=1
+MAIN="https://mirrors.uneoterm.dev/neoterm/neoterm-main"
+ROOT="https://mirrors.uneoterm.dev/neoterm/neoterm-root"
+X11="https://mirrors.uneoterm.dev/neoterm/neoterm-x11"

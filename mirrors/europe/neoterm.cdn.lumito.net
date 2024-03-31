@@ -1,0 +1,6 @@
+# This file is sourced by pkg
+# Mirror by Lumito, hosted in Germany
+WEIGHT=1
+MAIN="https://neoterm.cdn.lumito.net/neoterm-main"
+ROOT="https://neoterm.cdn.lumito.net/neoterm-root"
+X11="https://neoterm.cdn.lumito.net/neoterm-x11"

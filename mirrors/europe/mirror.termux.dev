@@ -1,0 +1,6 @@
+# This file is sourced by pkg
+# Geo-based mirror selection with mirrorbits
+WEIGHT=1
+MAIN="https://mirror.neoterm.dev/neoterm-main"
+ROOT="https://mirror.neoterm.dev/neoterm-root"
+X11="https://mirror.neoterm.dev/neoterm-x11"

@@ -1,0 +1,6 @@
+# This file is sourced by pkg
+# Mirror by Shandong University
+WEIGHT=1
+MAIN="https://mirrors.sdu.edu.cn/neoterm/neoterm-main"
+ROOT="https://mirrors.sdu.edu.cn/neoterm/neoterm-root"
+X11="https://mirrors.sdu.edu.cn/neoterm/neoterm-x11"
