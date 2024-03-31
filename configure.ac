@@ -3,7 +3,7 @@ dnl To rebuild the 'configure' script from this, execute the command
 dnl	autoconf
 dnl in the directory containing this script.
 dnl
-dnl Copyright (C) 2022-2024 NeoTerm
+dnl Copyright (C) 2024 NeoTerm
 dnl
 dnl  This file is part of neoterm-tools.
 dnl
@@ -22,13 +22,13 @@ dnl  along with neoterm-tools.  If not, see
 dnl  <https://www.gnu.org/licenses/>.
 
 AC_PREREQ([2.69])
-AC_INIT([neoterm-tools], [1.41.2], [support@theworkjoy.com])
+AC_INIT([neoterm-tools], [1.41.3], [support@theworkjoy.com])
 
 AM_INIT_AUTOMAKE([foreign])
 
 AC_PROG_MAKE_SET
 
-copyright="Copyright (C) 2022 NeoTerm."
+copyright="Copyright (C) 2024 NeoTerm."
 if test "${NEOTERM_APP_PACKAGE+set}" = set; then
   neoterm_app_package="$NEOTERM_APP_PACKAGE"
 else
